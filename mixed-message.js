@@ -7,3 +7,10 @@ const messages = [
 "It's always a good day to map your birth chart."
 ];
 
+const randMessageSelect = () => {
+    let randNumberGen = Math.floor(Math.random() * messages.length);
+    let randMessage = messages[randNumberGen];
+    return randMessage
+}
+
+console.log(randMessageSelect());
